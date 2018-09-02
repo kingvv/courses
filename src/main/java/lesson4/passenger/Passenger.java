@@ -33,7 +33,7 @@ public class Passenger {
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer();
-        sb.append("with ticket ").append(ticket).append('\'');
+        sb.append("with ticket ").append(ticket);
         if (dog != null) sb.append(", with ").append(dog);
         return sb.toString();
     }

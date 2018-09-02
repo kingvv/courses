@@ -58,13 +58,7 @@ public class Main {
                 bus.comeInPassenger(passenger5);
             }
 
-            if (stopStation == busStations.size() - 1) {
-
-                bus.comeOutPassenger(passenger2);
-                bus.comeOutPassenger(passenger3);
-                bus.comeOutPassenger(passenger4);
-                bus.comeOutPassenger(passenger5);
-            }
+            if (stopStation == busStations.size() - 1) bus.comeOutAllPassengers();
 
         }
 

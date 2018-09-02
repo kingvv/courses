@@ -3,6 +3,7 @@ package lesson4.route;
 import lesson4.passenger.Passenger;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * This class use for work with object Bus
@@ -62,8 +63,8 @@ public class Bus {
     public void comeOutPassenger(Passenger passenger) {
 
         isBusInMotion();
-
         System.out.println(String.format("Passenger come out - %s ", passenger));
+        passengerList.remove(passenger);
     }
 
 
@@ -93,4 +94,17 @@ public class Bus {
         }
     }
 
+
+    /**
+     * Use this method when the all passenger must exit. Use this method after method Bus.stop
+     */
+    public void comeOutAllPassengers() {
+        isBusInMotion();
+
+        Iterator iterator = passengerList.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(String.format("Passenger come out - %s ", iterator.next()));
+            iterator.remove();
+        }
+    }
 }
