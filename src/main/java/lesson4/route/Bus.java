@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /**
  * This class use for work with object Bus
-* */
+ */
 
 public class Bus {
 
@@ -16,8 +16,9 @@ public class Bus {
 
     /**
      * Use this method when bus need to motion
+     *
      * @param busStation user object BusStation
-    * */
+     */
     public void start(BusStation busStation) {
 
         busInMotion = true;
@@ -27,8 +28,9 @@ public class Bus {
 
     /**
      * Use this method when bus need to stop
+     *
      * @param busStation user object BusStation
-     * */
+     */
 
     public void stop(BusStation busStation) {
 
@@ -37,11 +39,11 @@ public class Bus {
     }
 
 
-
     /**
      * Use this method when the passenger must exit. Use this method after method Bus.stop
+     *
      * @param passenger user object Passenger
-     * */
+     */
 
     public void comeInPassenger(Passenger passenger) {
 
@@ -52,11 +54,11 @@ public class Bus {
     }
 
 
-
     /**
      * Use this method when the passenger must exit. Use this method after method Bus.stop
+     *
      * @param passenger user object Passenger
-     * */
+     */
     public void comeOutPassenger(Passenger passenger) {
 
         isBusInMotion();
@@ -68,11 +70,10 @@ public class Bus {
     private void isBusInMotion() {
 
         if (busInMotion) {
-          throw new RuntimeException("The bus must stop!");
+            throw new RuntimeException("The bus must stop!");
 
         }
     }
-
 
 
     public ArrayList<BusStation> getRoute() {
@@ -81,8 +82,9 @@ public class Bus {
 
     /**
      * Use this method to build a bus route
+     *
      * @param busStation array BusStation or single value
-     * */
+     */
 
     public void setRoute(BusStation... busStation) {
 
