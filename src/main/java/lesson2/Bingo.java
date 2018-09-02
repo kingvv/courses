@@ -52,7 +52,7 @@ public class Bingo {
 
     private static void getEnteredNumberFromConsole() {
 
-        String input = new Scanner(System.in).next();
+        String input = new Scanner(System.in).nextLine();
         if (input.isEmpty()) System.exit(0);
         enteredNumber = Integer.parseInt(input);
         count++;
