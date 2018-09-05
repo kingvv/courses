@@ -9,11 +9,10 @@ public class Auto {
     protected String typeAuto;
     protected String model;
     protected String numericAuto;
-
-
     public Auto() {
         System.out.println("Auto____Parent constructor implicit was called without param____");
     }
+
 
     public Auto(int speed, String fuelType, String model, String numericAuto, String typeAuto) {
         System.out.println("Auto____Parent constructor called  with param____");
@@ -23,6 +22,10 @@ public class Auto {
         this.model = model;
         this.numericAuto = numericAuto;
         this.typeAuto = typeAuto;
+    }
+
+    public String getModel() {
+        return model;
     }
 
     public void ride() {
