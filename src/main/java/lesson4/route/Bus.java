@@ -100,11 +100,18 @@ public class Bus {
      */
     public void comeOutAllPassengers() {
         isBusInMotion();
+//
+//        Iterator iterator = passengerList.iterator();
+//        while (iterator.hasNext()) {
+//            System.out.println(String.format("Passenger come out - %s ", iterator.next()));
+//            iterator.remove();
+//        }
 
-        Iterator iterator = passengerList.iterator();
-        while (iterator.hasNext()) {
-            System.out.println(String.format("Passenger come out - %s ", iterator.next()));
-            iterator.remove();
+        passengerList.removeIf(el->{
+            System.out.println(String.format("Passenger come out - %s ", el.toString()));
+            return true;
         }
+        );
+
     }
 }

@@ -1,6 +1,6 @@
-package lesson6.game.action;
+package lesson7.action;
 
 @FunctionalInterface
-public interface IJump {
-    String jump();
+public interface IJump extends IAction {
+    float jump(int i);
 }

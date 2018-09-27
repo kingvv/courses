@@ -1,4 +1,4 @@
-package lesson6.game.action;
+package lesson7.action;
 
 public interface IShooting {
     String shoot();
