@@ -1,5 +1,6 @@
 package lesson6.game.action;
 
+@FunctionalInterface
 public interface IShooting {
-    String shoot();
+    void shoot();
 }
