@@ -1,0 +1,32 @@
+окт 28, 2018 12:37:35 PM lesson8.Main main
+SEVERE: Переполенение грузовика
+lesson8.exception.QueueOverflowException: В грузок больше не может быть загружено. Грузовик уже заполнен
+	at lesson8.transporter.Truck.putInATruck(Truck.java:24)
+	at lesson8.Main.main(Main.java:25)
+
+окт 28, 2018 12:37:35 PM lesson8.Main main
+SEVERE: Был загружен пустоя ящик
+окт 28, 2018 12:37:35 PM lesson8.Main main
+SEVERE: Переполенение грузовика
+lesson8.exception.QueueOverflowException: В грузок больше не может быть загружено. Грузовик уже заполнен
+	at lesson8.transporter.Truck.putInATruck(Truck.java:24)
+	at lesson8.Main.main(Main.java:25)
+
+окт 28, 2018 12:37:35 PM lesson8.Main main
+SEVERE: Был загружен пустоя ящик
+окт 28, 2018 12:37:35 PM lesson8.Main main
+SEVERE: Переполенение грузовика
+lesson8.exception.QueueOverflowException: В грузок больше не может быть загружено. Грузовик уже заполнен
+	at lesson8.transporter.Truck.putInATruck(Truck.java:24)
+	at lesson8.Main.main(Main.java:25)
+
+окт 28, 2018 12:37:35 PM lesson8.Main main
+SEVERE: Был загружен пустоя ящик
+окт 28, 2018 12:37:35 PM lesson8.Main main
+SEVERE: Переполенение грузовика
+lesson8.exception.QueueOverflowException: В грузок больше не может быть загружено. Грузовик уже заполнен
+	at lesson8.transporter.Truck.putInATruck(Truck.java:24)
+	at lesson8.Main.main(Main.java:25)
+
+окт 28, 2018 12:37:35 PM lesson8.Main main
+SEVERE: Был загружен пустоя ящик
