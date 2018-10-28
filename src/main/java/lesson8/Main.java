@@ -35,7 +35,7 @@ public class Main {
                     truck.cleanBoxTruck();
 
                 } catch (NotEmptyException el) {
-                    LOGGER.severe("Был загружен пустоя ящик");
+                    LOGGER.severe("Был загружен пустой ящик");
                 }
 
             }
