@@ -1,9 +1,9 @@
-package lesson6;
+package lesson7;
 
 
-import lesson6.game.characters.GameCharacter;
-import lesson6.game.characters.Spiderman;
-import lesson6.game.characters.Superman;
+import lesson7.game.characters.GameCharacter;
+import lesson7.game.characters.Spiderman;
+import lesson7.game.characters.Superman;
 
 public class Runner {
 

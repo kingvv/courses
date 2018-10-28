@@ -1,9 +1,9 @@
-package lesson6.game.characters;
+package lesson7.game.characters;
 
-import lesson6.game.action.IJump;
-import lesson6.game.action.IRun;
-import lesson6.game.action.IShooting;
-import lesson6.game.action.ISwimming;
+import lesson7.game.action.IJump;
+import lesson7.game.action.IRun;
+import lesson7.game.action.IShooting;
+import lesson7.game.action.ISwimming;
 
 public abstract class GameCharacter {
 

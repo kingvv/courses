@@ -1,4 +1,4 @@
-package lesson6.game.action;
+package lesson7.game.action;
 
 public interface IRun {
 

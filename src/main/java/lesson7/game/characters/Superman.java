@@ -1,4 +1,4 @@
-package lesson6.game.characters;
+package lesson7.game.characters;
 
 public class Superman extends GameCharacter {
 

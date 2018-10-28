@@ -9,7 +9,7 @@ public class FilterLog  implements Filter{
     @Override
     public boolean isLoggable(LogRecord logRecord) {
 
-        if (logRecord.getLevel().equals(Level.WARNING)) {
+        if (logRecord.getLevel().equals(Level.SEVERE)) {
             return false;
         }
         return true;
