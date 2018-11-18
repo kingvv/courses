@@ -1,16 +1,17 @@
-package lesson10;
+package lesson10.entities;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class Person {
+public class Contact {
 
     private String fio;
     private LocalDate birthDate;
     private List<String> phoneNumber;
     private String address;
     private LocalDateTime modifyDate;
+    private int id;
 
     public String getFio() {
         return fio;
@@ -54,6 +55,13 @@ public class Person {
     }
 
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     @Override
     public String toString() {

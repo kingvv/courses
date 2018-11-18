@@ -31,14 +31,13 @@ public class InputConsoleField {
     }
 
 
-
     public String getConsoleFio() {
         return readAndValidValue("[a-zA-Zа-яёА-ЯЁ\\s]{2,}", "Введите ФИО: ", new ValdateValue());
     }
 
 
     public String getConsolePhoneNumber() {
-        return readAndValidValue("[0-9]{5,}", "Введите номер телефона: ", new ValdateValue());
+        return readAndValidValue("[0-9\\s;]{5,}", "Введите номер телефона: ", new ValdateValue());
     }
 
 
@@ -55,7 +54,14 @@ public class InputConsoleField {
         return Integer.parseInt(readAndValidValue("[0-9]+", "", new ValdateValue()));
     }
 
+    public int getConsoleValueContactId() {
+        return Integer.parseInt(readAndValidValue("[0-9]+", "Введите id контакта: ", new ValdateValue()));
+    }
 
+
+    public String getConsoleValue() {
+        return readAndValidValue("[0-9a-zA-Zа-яёА-ЯЁ\\s]{5,}", "Введите фио или номер телефона для поиска: ", new ValdateValue());
+    }
 
 
 }

@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class NavigateConsolePanel {
 
-    OperationPhoneBook phoneBook = new OperationPhoneBook();
-
-    InputConsoleField inputConsoleField = new InputConsoleField();
+    OperationPhoneBook operationPhoneBook = new OperationPhoneBook();
 
     public void readConsole() {
         Scanner scanner = new Scanner(System.in);
@@ -18,7 +16,7 @@ public class NavigateConsolePanel {
             System.out.println("2 - Удалить контакт");
             System.out.println("3 - Показать все записи с сортировкой по выбрному полю");
             System.out.println("4 - Найти контакт");
-            System.out.println("5 - Редактироват контакт");
+            System.out.println("5 - Редактировать контакт");
 
             String input = scanner.nextLine();
             if (input.isEmpty()) {
@@ -34,11 +32,12 @@ public class NavigateConsolePanel {
 
         switch (number) {
             case 1:
-                System.out.println("Режим добавление контакта.");
-                phoneBook.addPerson();
+                System.out.println("Режим добавления контакта.");
+                operationPhoneBook.addContact();
                 break;
             case 2:
-                System.out.println("Удалить элемент");
+                System.out.println("Режим удаления контакта.");
+                operationPhoneBook.deleteContact();
                 break;
             case 3:
                 System.out.println("Режим отображения всех контактов.");
@@ -48,14 +47,18 @@ public class NavigateConsolePanel {
                 System.out.println("3 - Дата и время редактирования:");
                 System.out.println("4 - Дата рождения:");
 
-                phoneBook.showAllPersonOrderBy();
+                operationPhoneBook.showAllPersonOrderBy();
                 break;
 
             case 4:
-                System.out.println("Поиск элемента");
+                System.out.println("Режим поиска.");
+                operationPhoneBook.searchPerson();
+
+
                 break;
             case 5:
-                System.out.println("Редактировать запись");
+                System.out.println("Режим редактирования контакта");
+                operationPhoneBook.editContact();
                 break;
 
             default:
@@ -64,3 +67,4 @@ public class NavigateConsolePanel {
 
     }
 }
+
